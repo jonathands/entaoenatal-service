@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get(["/", "/:tz"], (req, res) => {
-  let xmas = new Date(2022, 11, 25);
+  let xmas = new Date(Date().getFullYear(), 11, 25);
   //tz = req.params["tz"];
   res.header("Access-Control-Allow-Origin", "*");
 	//Quais são os métodos que a conexão pode realizar na API
